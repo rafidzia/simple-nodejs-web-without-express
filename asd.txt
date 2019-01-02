@@ -1,0 +1,57 @@
+// httpReq.reqBody(req, function(data){
+    // console.log(data);
+          // var limit = req.headers['content-type'].split(";")[1].replace(" boundary=", "");
+          // limit = "--"+limit;
+          // var dataS = data.split(limit);
+          // console.log(dataS)
+          // dataS.shift();
+          // dataS.pop ();
+          //
+          // for(var i = 0; i < dataS.length; i++){
+          //   dataS[i] = dataS[i].split("\r\n");
+          //   dataS[i].shift()
+          //   dataS[i].pop()
+          //   var head = [];
+          //   var name = [];
+          //   var filename = [];
+          //   var type = [];
+          //   var isi = [];
+          //   if(dataS[i][1] === ""){
+          //     dataS[i].splice(1,1);
+          //     head[i] = dataS[i][0].slice(32, dataS[i][0].length).split("=");
+          //     head[i].shift();
+          //     name[i] = head[i].join("").replace(/\"/g, "");
+          //     filename[i] = "";
+          //     type[i] = "";
+          //     dataS[i].shift();
+          //     isi[i] = dataS[i].join("\r\n");
+          //   }else if(dataS[i][2] === ""){
+          //     dataS[i].splice(2,1);
+          //     head[i] = dataS[i][0].slice(32, dataS[i][0].length).split(";");
+          //     name[i] = head[i][0].split("=");
+          //     name[i].shift();
+          //     name[i] = name[i].join("").replace(/\"/g, "");
+          //     filename[i] = head[i][1].split("=");
+          //     filename[i].shift();
+          //     filename[i] = filename[i].join("").replace(/\"/g, "");
+          //     type[i] = dataS[i][1].split(": ")
+          //     type[i].shift();
+          //     type[i] = type[i].join("");
+          //     dataS[i].shift()
+          //     dataS[i].shift()
+          //     isi[i] = dataS[i].join("\r\n");
+          //
+          //   }
+          //   var objExp = {};
+          //   objExp[name[i]] = {
+          //     isi: isi[i],
+          //     type: type[i],
+          //     filename: filename[i]
+          //   }
+          // }
+          // // console.log(objExp.payed.isi);
+          // fs.writeFile("asd", objExp.payed.isi, 'binary', function(err){
+          //     if(err){console.log(err)}
+          //     else{console.log("success")};
+          // });
+// })

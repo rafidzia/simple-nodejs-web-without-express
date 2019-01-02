@@ -1,0 +1,17 @@
+- siswa
+a. tambah siswa
+b. hapus siswa
+- pantau*
+a. total siswa
+b. total penjualan 
+c. total barang
+d. total omset
+
+-profile
+-barang
+a. tambah
+b. hapus
+c. edit
+-laporan
+
+

@@ -1,0 +1,141 @@
+
+@font-face{
+    font-family: "mack-script";
+    src:url("/assets/fonts/Marck_Script/MarckScript-Regular.ttf");
+}
+@font-face {
+  font-family: "josefin-sans";
+  src:url("/assets/fonts/Josefin_Sans/JosefinSans-Regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'josefin-sans', sans-serif;
+    --main-color: tomato;
+}
+input, select{
+    padding:10px;
+    margin:20px 10px;
+    border:none;
+    background-color: #eee;
+}
+button{
+    background-color: var(--main-color);
+    padding:10px;
+    width:100px;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    outline:none;
+    color:white;
+    margin:0px 50px 50px 50px;
+    box-shadow: 4px 4px 15px 1px rgba(0,0,0,0.3);
+    transition:.2s;
+}
+button:active{
+  box-shadow:none;
+}
+.hidden{
+    display:none;
+}
+.inline-mid{
+    display:inline-block;
+    vertical-align: middle;
+}
+.inline-top{
+    display:inline-block;
+    vertical-align: top;
+}
+body{
+    background-color: #eee;
+}
+.container{
+    position:relative;
+    display:block;
+    margin:50px 5%;
+    width:auto;
+    height: auto;
+    text-align: center;
+}
+fieldset.field-cat{
+    border:none;
+    width:calc(100% - 20px);
+    padding:10px;
+    background-color: white;
+    text-align: center;
+}
+.field-cat legend{
+    text-align: left;
+    font-size: 40px;
+    margin-left:20px;
+}
+
+.form-pengiriman input, .form-pengiriman select{
+    width:40%;
+}
+
+.form-pengiriman textarea{
+    width:90%;
+    max-width:90%;
+    height: 100px;
+    max-height: 200px;
+    background-color: #eee;
+    border:none;
+    padding:10px;
+    margin:0px;
+}
+.form-pengiriman button{
+    float:right;
+}
+.tbl-brg{
+    position:relative;
+    width:100%;
+    padding:25px;
+    height:auto;
+    border-spacing: 0;
+}
+.tbl-brg th{
+    border-bottom: 2px solid #999;
+    padding: 10px 2px;
+}
+.tbl-brg td{
+    border-bottom: 2px solid #eee;
+    padding: 10px 2px;
+    text-align: center;
+}
+.tbl-brg .border-none{
+    border: none;
+}
+.tbl-brg td:nth-child(1){width:30%;}
+.tbl-brg td:nth-child(3){width:10%;}
+.img-produk{
+    height:200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width:768px){
+    .tbl-brg td, .tbl-brg th{
+        padding: 3px;
+        font-size: 13px;
+    }
+    .tbl-brg td:nth-child(1){width:40%;}
+    .img-produk{height:100px;}
+}
+@media screen and (max-width:480px){
+  .container{
+    margin:50px 1%;
+  }
+
+    .form-pengiriman input, .form-pengiriman select{
+        width: 100%;
+        margin:20px 0px;
+        display:block;
+    }
+
+    .tbl-brg{
+      padding:25px 0px;
+    }
+
+}

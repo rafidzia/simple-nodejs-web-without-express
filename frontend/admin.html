@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+    <link rel="stylesheet"type="text/css" href="/assets/stylesheets/admin.css">
+    <link rel="stylesheet"type="text/css" href="/assets/font-awesome/css/font-awesome.min.css">
+    <title>Admin SMKSABSHOP</title>
+  </head>
+  <body>
+    <div id="black-cover" onclick="closeSlide()"></div>
+    <div id="menu" class="clickA">
+        <a class="closeS" onclick="closeSlide()" id="search-click"><span class="fa fa-close"></span></a>
+        <div id="slide-menu">
+        <ul class="slide-list">
+          <a class="link-cat" href="/admin"><li><span class="fa fa-dashboard"></span> Dashboard</li></a>
+            <a class="link-cat" href="/admin/pesanan"><li><span class="fa fa-reorder"></span> Daftar Pesanan</li></a>
+            <a class="link-cat" href="/admin/siswa"><li><span class="fa fa-users"></span> Daftar Siswa</li></a>
+        </ul>
+      </div>
+    </div>
+    <nav class="navigasi">
+      <ul class="menu">
+        <li class="menu-nav inline-mid"><a onclick="slideClick('menu')"><span class="fa fa-reorder"></span></a></li>
+        <li class="user inline-mid"><a onclick="hoverClick('dropmenu')"><span id="name">Admin</span> <span class="fa fa-user"></span> <span class="fa fa-caret-down"></span></a></li>
+      </ul>
+      <div id="dropmenu" class="inline-top">
+        <ul>
+          <li><a onclick="logout()"><span class="fa fa-sign-out"></span> Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="container">
+
+    </main>
+  </body>
+  <script src="/assets/javascripts/function.js"></script>
+  <script src="/assets/javascripts/adminClick.js"></script>
+  <script src="/assets/javascripts/admin.js"></script>
+</html>

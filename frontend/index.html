@@ -1,0 +1,86 @@
+<html>
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+       <meta charset="utf-8"/>
+        <link rel="stylesheet" href="/assets/stylesheets/style.css">
+        <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <div id="black-cover" onclick="closeSlide()"></div>
+        <div id="cart" class="clickA">
+            <a class="closeS" onclick="closeSlide()" id="cart-click"><span class="fa fa-close"></span></a>
+            <form id="bayar" method="post" action="/bayar">
+            <div id="slide-cart">
+                <ul id="parent-cart" class="slide-list">
+                <!--cart here-->
+                </ul>
+            </div>
+            <div id="total-cart" class="cart-check"><span>Total</span> <span>Rp.0,-</span></div>
+            <button type="submit" class="cart-check">Bayar</button>
+            </form>
+        </div>
+        <div id="search" class="clickA">
+            <a class="closeS" onclick="closeSlide()" id="search-click"><span class="fa fa-close"></span></a>
+            <div id="slide-search">
+            <ul class="slide-list">
+            <form id="search-form" method="post">
+                <input type="text" name="search" placeholder="Cari..." autocomplete='off'/>
+                <button type="submit" name="submit"><span class="fa fa-search"></span></button>
+            </form>
+                <a class="link-cat" href="/merchandise"><li>Merchandise</li></a>
+                <a class="link-cat" href="/t-shirt"><li>T-shirt</li></a>
+                <a class="link-cat" href="/woodcraft"><li>Woodcraft</li></a>
+                <a class="link-cat" href="/nursery"><li>Nursery</li></a>
+                <a class="link-cat" href="/culinary"><li>Culinary</li></a>
+                <a class="link-cat" href="/machine"><li>Machine</li></a>
+                <a class="link-cat" href="/compost"><li>Compost</li></a>
+                <a class="link-cat" href="/welding"><li>Welding</li></a>
+                <a href="/bayar" style="color:tomato;font-size:20px;"><li>Konfirmasi Pembayaran <span class="fa fa-arrow-right"></span></li></a>
+            </ul>
+          </div>
+        </div>
+        <nav class="navigasi">
+            <img class="logo inline-mid" src="/assets/images/homesmksab.jpg">
+            <span class="logotext">SmkSab Shop</span>
+            <ul class="menu">
+                <li class="item inline-mid"><a onclick="slideClick('cart')" id="cart-click"><span class="fa fa-shopping-cart"></span></a></li>
+                <li class="item inline-mid"><a onclick="slideClick('search')" id="search-click"><span class="fa fa-search"></span></a></li>
+            </ul>
+        </nav>
+        <main class="container">
+        <!--content here-->
+
+        </main>
+        <footer>
+            <div class="foot-d" id="foot-1">
+                <div class="foot-t">Contact Us</div>
+                <div>08xx-xxxx-xxxx</div><br/>
+                <div class="foot-t">Follow Us</div>
+                <div>
+                    <span class="fa fa-facebook"></span>
+                    <span class="fa fa-instagram"></span>
+                </div>
+            </div>
+            <div id="foot-lim"></div>
+            <div class="foot-d" id="foot-2">
+                <div class="foot-t">Our Product</div>
+                <div><a href="/merchandise">Merchandise</a></div>
+                <div><a>T-shirt</a></div>
+                <div><a>Woodcraft</a></div>
+                <div><a>Nursery</a></div>
+                <div><a>Culinary</a></div>
+                <div><a>Machine</a></div>
+                <div><a>Compost</a></div>
+                <div><a>Welding</a></div>
+            </div>
+        </footer>
+    </body>
+    <script>
+    </script>
+   <script src="/assets/javascripts/function.js"></script>
+   <script src="/assets/javascripts/slideClick.js"></script>
+   <script src="/assets/javascripts/buy.js"></script>
+   <script src="/assets/javascripts/ajax.js"></script>
+   <script src="/assets/javascripts/search.js"></script>
+</html>

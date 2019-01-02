@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+    <link rel="stylesheet"type="text/css" href="/assets/stylesheets/admin.css">
+    <link rel="stylesheet"type="text/css" href="/assets/font-awesome/css/font-awesome.min.css">
+    <title>Admin SMKSABSHOP</title>
+  </head>
+  <body>
+    <div id="black-cover" onclick="closeSlide()"></div>
+    <div id="menu" class="clickA">
+        <a class="closeS" onclick="closeSlide()" id="search-click"><span class="fa fa-close"></span></a>
+        <div id="slide-menu">
+        <ul class="slide-list">
+          <a class="link-cat" href="/siswa"><li><span class="fa fa-dashboard"></span> Dashboard</li></a>
+          <a class="link-cat" href="/siswa/pesanan"><li><span class="fa fa-reorder"></span> Daftar Pesanan</li></a>
+          <a class="link-cat" href="/siswa/barang"><li><span class="fa fa-inbox"></span> Daftar Barang</li></a>
+        </ul>
+      </div>
+    </div>
+    <nav class="navigasi">
+      <ul class="menu">
+          <li class="menu-nav inline-mid"><a onclick="slideClick('menu')"><span class="fa fa-reorder"></span></a></li>
+          <li class="user inline-mid"><a onclick="hoverClick('dropmenu')"><span id="name">Admin</span> <span class="fa fa-user"></span> <span class="fa fa-caret-down"></span></a></li>
+      </ul>
+</nav>
+<div id="dropmenu" class="inline-top">
+  <ul>
+    <li><a onclick="logout()"><span class="fa fa-sign-out"></span> Logout</a></li>
+  </ul>
+</div>
+
+    <main class="container">
+        
+<!-- 
+      <div class="indikator">
+        <fieldset class="field-cat indicat inline-top">
+          <legend>Penjualan</legend>
+          <span class="fa fa-shopping-cart fa-3x"></span>
+          <span id="ttl-jual" class="point"></span>
+        </fieldset>
+        <fieldset class="field-cat indicat inline-top">
+          <legend>Barang</legend>
+          <span class="fa fa-inbox fa-3x"></span>
+          <span id="ttl-brg" class="point"></span>
+        </fieldset>
+        <fieldset class="field-cat indicat inline-top">
+          <legend>Omset</legend>
+          <span class="fa fa-money fa-3x"></span>
+          <span id="ttl-omset" class="point"></span>
+        </fieldset>
+      </div>
+      <div>
+      <fieldset class="field-cat fladash">
+        <legend>Pesanan</legend>
+        <div>
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th>Nama</th>
+                <th>Nomor</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Farid</td>
+                <td>089628007639</td>
+                <td><a class="btn-a" href="#">Detail <span class="fa fa-arrow-right"></span></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </fieldset>
+      <fieldset class="field-cat fladash">
+        <legend>Barang yang Terjual</legend>
+        <div>
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Nama</th>
+                <th>Terjual</th>
+                <th>Sisa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img class="img-produk" src="/assets/images/barang/a13.jpg" alt=""/></td>
+                <td>Item 1 </td>
+                <td>3</td>
+                <td>10</td>
+                <td><a class="btn-a" href="#">Detail <span class="fa fa-arrow-right"></span></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </fieldset>
+      </div> -->
+
+    </main>
+  </body>
+  <script src="/assets/javascripts/function.js"></script>
+  <script src="/assets/javascripts/adminClick.js"></script>
+  <script src="/assets/javascripts/user.js"></script>
+</html>

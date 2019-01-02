@@ -1,0 +1,8 @@
+<script src="assets/javascripts/function.js"></script>
+<script>
+    window.onload = function(){
+        sendAjax("GET", window.location.pathname, false, [['accept', 'json']], undefined, function(data){
+            console.log(JSON.parse(data))
+        })
+    }
+</script>
